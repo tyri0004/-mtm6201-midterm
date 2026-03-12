@@ -241,3 +241,51 @@ button:active{
 	transform:scale(1.15);
 }
 
+/************************ menu/locations ********************/
+
+.location-menu{
+	display: grid; 
+	grid-template-columns: 1fr;
+}
+
+.menu, .locations{
+	color: #fff;
+	text-align: center;
+	padding: 100px 20px
+}
+
+.menu{
+	background:url(../images/coffee-shop.jpeg) center/cover no-repeat;
+}
+
+.locations{
+	background:url(../images/coffee-shop.jpeg) center/cover no-repeat
+}
+
+/************ about  *****************/
+
+.about-us{
+	display: flex;
+	flex-direction: column; 
+	gap: 30px;
+}
+
+.story button{
+	margin-top: 20px;
+}
+
+/****************** testimonials ****************/
+
+.testimonials{
+	background: #000; 
+	color: #fff; 
+}
+
+.testimonial-cards{
+	display: flex; 
+	flex-direction:column;
+	gap: 20px;
+	margin-top: 40px;
+
+}
+
