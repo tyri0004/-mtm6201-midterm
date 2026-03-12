@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Skip to Main Content</a>
+        <a href="#main-nav" class="skip-link">Skip to Navigation</a>
+        <a href="#menu" class="skip-link">Skip to Menu</a>
+        <a href="#locations" class="skip-link">Skip to Location</a>
+        <a href="#about-us" class="skip-link">Skip to About us</a>
+        <a href="testimonials" class="skip-link">Skip to Testimonials</a>
+    </div>
    <div class="container">
         <header>
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
                 <img src="images/my-coffee-shop-logo.svg" alt="company logo that says my coffee shop">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#locations">Locations</a></li>
                 </ul>
             </nav>
             <div class="banner">
@@ -23,7 +31,7 @@
                 <button>Explore our menu</button>
             </div>
         </header>
-        <main>
+        <main id="main-content">
             <section class="wrapper">
                 <article class="coffee-welcome">
                     <h2>Welcome to My Coffee House!</h2>
