@@ -289,3 +289,34 @@ button:active{
 
 }
 
+.cards{
+	position: relative; 
+	overflow: hidden; 
+	transition: transform .3s ease;
+}
+
+.cards:hover{
+	transform: translateY(-8px);
+}
+
+.cards blockquote{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+
+	background:linear-gradient(
+		transparent, 
+		rgba(0,0,0,0.85)
+	);
+
+	opacity: 0;
+	transform: translateY(40px);
+	transition: all .4s ease;
+}
+
+.cards:hover blockquote{
+	opacity: 1; 
+	transform: translateY(0);
+}
