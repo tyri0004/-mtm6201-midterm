@@ -49,3 +49,19 @@ table {
 /*************************************
         Main Css Starts
 **************************************/
+
+/* typography */
+
+h1, h2, h3, h4, .main-nav a{
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight:900;
+}
+
+h2{
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
