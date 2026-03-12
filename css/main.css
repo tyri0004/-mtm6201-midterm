@@ -49,19 +49,62 @@ table {
 /*************************************
         Main Css Starts
 **************************************/
+/************ Global Settings ************/
 
-/* typography */
+/* ensures images scale properly */
+img{
+	max-width: 100%;
+	display: block;
+}
+
+html{
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Karla', sans-serif;
+	line-height: 1.6;
+	color: #000;
+	background: #f3f0e9;
+}
+
+/***************** typography  for mobile ***********/
 
 h1, h2, h3, h4, .main-nav a{
 	font-family: 'Lato', sans-serif;
 }
 
 h1{
-	font-size: 2rem;
+	font-size: 2.027rem;
 	font-weight:900;
 }
 
 h2{
-	font-size: 1.6rem;
-	margin-bottom: 10px;
+	font-size: 1.802rem;
+}
+
+h3{
+	font-size: 1.424rem; 
+	margin-bottom: 20px;
+}
+p{
+	font-size: 1rem;
+}
+
+/* wrapper and container */
+
+.wrapper,
+.location-menu, 
+.about-us,
+.testimonials{
+	max-width: 1200px;
+	margin: auto; 
+	padding: 60px 20px; 
+}
+
+/* main nav */
+
+header{
+	background: black; 
+	colour: white; 
 }
