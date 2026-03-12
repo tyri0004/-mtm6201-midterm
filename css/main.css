@@ -91,7 +91,7 @@ p{
 	font-size: 1rem;
 }
 
-/* wrapper and container */
+/*************** wrapper and container ***********/
 
 .wrapper,
 .location-menu, 
@@ -102,9 +102,59 @@ p{
 	padding: 60px 20px; 
 }
 
-/* main nav */
+/*************** main nav **************/
 
 header{
-	background: black; 
-	colour: white; 
+	background: #000;
+}
+
+.main-nav{
+	display:flex; 
+	flex-direction: column; 
+	align-items: center; 
+	padding: 20px;
+}
+
+.main-nav img{
+	width: 170px; 
+	margin-bottom: 10px; 
+}
+
+.main-nav ul{
+	display: flex; 
+	gap: 20px; 
+	list-style: none; 
+}
+
+.main-nav a{
+	color: #fff; 
+	text-decoration: none;
+	font-weight: 700;
+	position: relative;
+	transition: color .3s ease;
+}
+
+.main-nav a::after{
+	content: "";
+	position: absolute;
+	left: 0; 
+	bottom: -6px;
+	width: 0; 
+	height: 2px;
+	background:#d69e3d;
+	transition: width .3s ease;
+}
+
+.main-nav a:hover{
+	color: #d69e3d;
+}
+
+.main-nav a:hover::after{
+	width: 100%;
+}
+
+/*************** Banner **********************/
+
+.banner{
+	background: url(../images/hero-background.jpg) center/cover no-repeat;
 }
