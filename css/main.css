@@ -200,7 +200,7 @@ button:active{
 /********************* Coffee images grid ******************/
 
 .coffee-images{
-	display: grip; 
+	display: grid; 
 	grid-template-columns: 1fr;
 	gap: 10px; 
 	margin-top:30px;
@@ -211,5 +211,33 @@ button:active{
 }
 
 .coffee-images img:hover{
-	transition: scale(1.05); 
+	transform: scale(1.05); 
 }
+
+/***************** Why visit us ***************************/
+.offer{
+	text-align: center;
+}
+
+.features{
+	display: flex;
+	flex-direction: column; 
+	gap: 40px; 
+	margin-top: 40px;
+}
+
+.feature{
+	text-align: center; 
+}
+
+.feature img{
+	width: 70px; 
+	margin: auto; 
+	margin-bottom: 15px;
+	transition: transform .4s ease;
+}
+
+.feature:hover img{
+	transform:scale(1.15);
+}
+
