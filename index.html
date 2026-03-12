@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- skip links allow for the keyboard and screen readers users to jump directly to different sections of the page without tabbing through everything -->
     <div class="skip-links">
         <a href="#main-content" class="skip-link">Skip to Main Content</a>
         <a href="#main-nav" class="skip-link">Skip to Navigation</a>
@@ -15,27 +16,48 @@
         <a href="#about-us" class="skip-link">Skip to About us</a>
         <a href="#testimonials" class="skip-link">Skip to Testimonials</a>
     </div>
+    <!-- main container to wrap the entire website so that i can control everything within it if needed -->
    <div class="container">
         <header>
+
+            <!-- main navigation for the website, i added an aria-label so screen readers know this is the main nav-->
             <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+
+                <!-- coffee shop logo at the top of the page -->
                 <img src="images/my-coffee-shop-logo.svg" alt="company logo that says my coffee shop">
+
+                <!-- the navigation links that allow users to jump to sections further down on the same page-->
                 <ul>
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#locations">Locations</a></li>
                 </ul>
             </nav>
+
+            <!-- hero/banner section at the top of the page, wrapped for easy controlling -->
             <div class="banner">
+
+                <!-- main headline -->
                 <h1>Experience Coffee like Never Before</h1>
+                <!-- short intro paragraphy -->
                  <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+                 <!-- call to action button -->
                 <button>Explore our menu</button>
             </div>
         </header>
+
+        <!-- main content of the website -->
         <main id="main-content">
+
+            <!--  this section wraps the welcome content and the features/offer section -->
             <section class="wrapper" aria-labelledby="welcome-heading">
+
+                <!-- welcome article introducing the coffee shop -->
                 <article class="coffee-welcome">
                     <h2 id="welcome-heading">Welcome to My Coffee House!</h2>
                     <h3>Experience a New Way to Taste Coffee</h3>
+
+                    <!-- images grouped together in their own div for easy controlling -->
                     <div class="coffee-images">
                         <img src="images/latte.jpeg" alt="latte art being poured into a cup">
                         <img src="images/coffee-beans.jpeg" alt="coffee beans in jar and on wooden table">
@@ -44,10 +66,16 @@
                         <img src="images/smiling-employee.jpeg" alt="coffee shop employee smiling while making coffee">
                     </div>
                 </article>
+
+                <!-- article for features and offers -->
                 <article class="offer" aria-labelledby="offer-heading">
                     <h2 id="offer-heading">What we Offer</h2>
                     <h3>Why Visit Us?</h3>
+
+                    <!-- div wrapping all the cards to easily control the placement of each later on -->
                     <div class="features">
+                    
+                    <!-- individual cards wrapped in divs for individual controlling -->
                     <div class="feature">
                         <img src="images/fair-trade.svg" alt="fair trade icon representing ethically sourced coffee">
                         <h4>Fair Trade</h4>
@@ -69,7 +97,10 @@
                     </div>
                 </article>
             </section>
+
+            <!-- section for the location and menu blocks -->
             <section class="location-menu">
+                <!-- menu section, i used aria-labelledby to help the screenreaders understand that the menu-heading is the label for this section, i did the same for location and the about section, and testimonials -->
                 <div class="menu" id="menu" role="region" aria-labelledby="menu-heading">
                     <h2 id="menu-heading">Our Menu</h2>
                     <h3>Explore what we have to offer you</h3>
@@ -91,9 +122,13 @@
                     <button aria-label="Learn More About our Coffee shop story">Learn More</button>
                 </div>
             </section>
+
+            <!-- section wrapping testimonial cards for easy controlling -->
             <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
                 <h2 id="testimonials-heading">Testimonials</h2>
                 <h3>What Our Customers Say About Us</h3>
+
+                <!-- div around cards, for individual controlling, individual cards have their own div for controlling them individually, added aria roles to each list item so that screen readers know its a list item -->
                 <div class="testimonial-cards" role="list">
                 <div class="cards" id="jane" role="listitem">
                     <blockquote>
@@ -116,6 +151,8 @@
                 </div>
             </section>
         </main>
+
+        <!-- footer for copyright-->
         <footer>
             <p>&copy; My Coffee Company 2024</p>
         </footer>
