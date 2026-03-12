@@ -167,3 +167,49 @@ header{
 	max-width: 500px;
 	margin: 20px auto;
 }
+
+/**************** buttons *****************/
+
+button{
+	font-family: 'Karla', sans-serif;
+	background: #fff;
+	border: none; 
+	padding: 14px 30px;
+	font-weight: 600;
+	cursor: pointer;
+
+	transition:
+	transform .3s ease, 
+	background .3s ease, 
+	box-shadow .3s ease;
+}
+
+button:hover{
+	background:#d69e3d; 
+	color:#fff;
+	transform: translateY(-4px);
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+button:active{
+	background: #966f2c;
+	transform: translateY(1px);
+	box-shadow: none;
+}
+
+/********************* Coffee images grid ******************/
+
+.coffee-images{
+	display: grip; 
+	grid-template-columns: 1fr;
+	gap: 10px; 
+	margin-top:30px;
+}
+
+.coffee-images img{
+	transition: transform .4s ease; 
+}
+
+.coffee-images img:hover{
+	transition: scale(1.05); 
+}
