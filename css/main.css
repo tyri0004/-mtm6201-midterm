@@ -111,6 +111,9 @@ p{
 	font-size: 1rem;
 }
 
+blockquote cite{
+	text-transform: uppercase;
+}
 
 /*************** wrapper and container ***********/
 
@@ -177,7 +180,8 @@ header{
 /*************** Banner **********************/
 
 .banner{
-	background: url(../images/hero-background.jpg) center/cover no-repeat;
+	background:
+	linear-gradient(rgba(0,0,0,0.40)), url(../images/hero-background.jpg) center/cover no-repeat;
 	text-align:center;
 	color:#fff;
 	padding: 120px 20px;
@@ -196,27 +200,24 @@ button{
 	background: #fff;
 	border: none; 
 	padding: 14px 30px;
-	font-weight: 600;
+	font-weight: 700;
+	text-transform: uppercase;
 	cursor: pointer;
 
-	transition:
-	transform .3s ease, 
-	background .3s ease, 
-	box-shadow .3s ease;
+	transition: all .3s ease;
 }
 
 button:hover{
 	background:#d69e3d; 
 	color:#fff;
-	transform: translateY(-4px);
+	transform: translateY(-3px);
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-	border: solid #fff 1px;
 }
 
 button:active{
 	background: #966f2c;
 	transform: translateY(1px);
-	box-shadow: none;
+	
 }
 
 .about-us button{
@@ -225,7 +226,18 @@ button:active{
 }
 
 .about-us button:hover{
-	background: #966f2c;
+	background: #d69e3d;
+}
+
+.locations button{
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.locations button:hover{
+	background: #fff;
+	color: #000;
 }
 
 
@@ -284,15 +296,19 @@ button:active{
 .location-menu{
 	display: grid; 
 	grid-template-columns: 1fr;
-	background:url(../images/coffee-shop.jpeg) center/cover no-repeat;
+	background:linear-gradient(rgba(0,0,0,0.40)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
 }
 
 .menu, .locations{
 	color: #fff;
 	text-align: center;
-	padding: 100px 20px
+	padding: 50px 20px;
+
 }
 
+.location-menu h2{
+	padding-bottom: 50px;
+}
 
 /************ about  *****************/
 
