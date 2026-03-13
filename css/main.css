@@ -216,7 +216,7 @@ header{
 /* hero background image with a dark overlay for readibility and to match mockup */
 .banner{
 	background:
-	linear-gradient(rgba(0,0,0,0.40)), url(../images/hero-background.jpg) center/cover no-repeat;
+	linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(../images/hero-background.jpg) center/cover no-repeat;
 	text-align:center;
 	color:#fff;
 	padding: 120px 20px;
@@ -356,7 +356,7 @@ button:active{
 .location-menu{
 	display: grid; 
 	grid-template-columns: 1fr;
-	background:linear-gradient(rgba(0,0,0,0.70)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
+	background:linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
 }
 
 /* styling for both menu and location blocks */
