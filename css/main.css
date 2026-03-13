@@ -206,6 +206,7 @@ button:hover{
 	color:#fff;
 	transform: translateY(-4px);
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+	border: solid #fff 1px;
 }
 
 button:active{
@@ -218,9 +219,13 @@ button:active{
 
 .coffee-images{
 	display: grid; 
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	gap: 10px; 
 	margin-top:30px;
+}
+
+.coffee-images img:first-child{
+	grid-column: 1 / -1;
 }
 
 .coffee-images img{
@@ -263,6 +268,7 @@ button:active{
 .location-menu{
 	display: grid; 
 	grid-template-columns: 1fr;
+	background:url(../images/coffee-shop.jpeg) center/cover no-repeat;
 }
 
 .menu, .locations{
@@ -271,13 +277,6 @@ button:active{
 	padding: 100px 20px
 }
 
-.menu{
-	background:url(../images/coffee-shop.jpeg) center/cover no-repeat;
-}
-
-.locations{
-	background:url(../images/coffee-shop.jpeg) center/cover no-repeat
-}
 
 /************ about  *****************/
 
@@ -290,7 +289,22 @@ button:active{
 .story button{
 	margin-top: 20px;
 }
+/* testimonial background imamges */
 
+#jane{
+	background:url(../images/testimonial-1.jpeg) center/cover no-repeat;
+	min-height: 500px;
+}
+
+#scott{
+	background:url(../images/testimonial-2.jpeg) center/cover no-repeat;
+	min-height: 500px; 
+}
+
+#susie{
+	background:url(../images/testimonial-3.jpeg) center/cover no-repeat;
+	min-height: 500px;
+}
 /****************** testimonials ****************/
 
 .testimonials{
@@ -331,11 +345,13 @@ button:active{
 	opacity: 0;
 	transform: translateY(40px);
 	transition: all .4s ease;
-}
 
-.cards:hover blockquote{
 	opacity: 1; 
 	transform: translateY(0);
+}
+
+blockquote cite{
+	color:#d69e3d;
 }
 
 /***************** footer ***************/
