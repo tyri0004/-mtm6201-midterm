@@ -265,6 +265,9 @@ button:active{
 }
 
 .coffee-images img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
 	transition: transform .4s ease; 
 }
 
@@ -434,7 +437,7 @@ footer::before{
 /* tablet styles */
 
 
-@media screen and(min-width:768px){
+@media screen and (min-width:768px){
 	/* typography scale */
 	h1{
 		font-size:2.986rem;
@@ -455,11 +458,22 @@ footer::before{
 		margin:auto;
 	}
 
+	.main-nav img{
+		margin-bottom: 0;
+	}
+
+	/* banner */
+
+	.banner{
+		padding: 160px 20px; 
+	}
+
 	/* coffee images */
 
 	.coffee-images{
 		grid-template-columns: 2fr 1fr 1fr;
-		grid-template-rows: auto auto;
+		grid-template-rows: 250px 250px;
+		gap: 15px;
 	}
 
 	.coffee-images img:first-child{
@@ -470,15 +484,24 @@ footer::before{
 	/* why visit us */
 
 	.features{
-		flex-direction: row; 
-		justify-content: center;
-		gap:40px; 
+		display: grid; 
+		grid-template-columns: 1fr 1fr;
+		gap: 60px; 
+		justify-items: center;
+	}
+
+	.feature:nth-child(3){
+		grid-column:1 / -1;
 	}
 
 	/* menu and locations */
 
 	.location-menu{
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.menu, .locations{
+		padding: 120px 40px;
 	}
 
 	/* about us section */
@@ -501,6 +524,7 @@ footer::before{
 
 	.testimonial-cards{
 		flex-direction: row;
+		gap:20px;
 	}
 
 	.cards{
