@@ -94,19 +94,23 @@ h1, h2, h3, h4, .main-nav a{
 h1{
 	font-size: 2.027rem;
 	font-weight:900;
+	text-transform: uppercase;
 }
 
 h2{
 	font-size: 1.802rem;
+	text-transform: uppercase;
 }
 
 h3{
 	font-size: 1.424rem; 
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 p{
 	font-size: 1rem;
 }
+
 
 /*************** wrapper and container ***********/
 
@@ -260,11 +264,13 @@ button:active{
 
 .feature{
 	text-align: center; 
+	max-width: 280px; 
+	margin: auto;
 }
 
 .feature img{
-	width: 70px; 
-	margin: auto; 
+	width: 150px; 
+	margin: 0 auto 20px auto; 
 	margin-bottom: 15px;
 	transition: transform .4s ease;
 }
