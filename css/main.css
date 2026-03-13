@@ -85,7 +85,7 @@ body{
 	top: 10px; 
 }
 
-/***************** typography  for mobile ***********/
+/***************** typography ***********/
 
 h1, h2, h3, h4, .main-nav a{
 	font-family: 'Lato', sans-serif;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, .main-nav a{
 
 h1{
 	font-size: 2.027rem;
-	font-weight:900;
+	font-weight:1000;
 	text-transform: uppercase;
 }
 
@@ -113,6 +113,16 @@ p{
 
 blockquote cite{
 	text-transform: uppercase;
+}
+
+#welcome-heading, #about-heading, #menu-heading, #locations-heading, #testimonials-heading, #offer-heading{
+	color: #d69e3d;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+#offer-heading{
+	padding-top: 100px;
 }
 
 /*************** wrapper and container ***********/
@@ -200,7 +210,7 @@ button{
 	background: #fff;
 	border: none; 
 	padding: 14px 30px;
-	font-weight: 700;
+	font-weight: 1000;
 	text-transform: uppercase;
 	cursor: pointer;
 
@@ -296,7 +306,7 @@ button:active{
 .location-menu{
 	display: grid; 
 	grid-template-columns: 1fr;
-	background:linear-gradient(rgba(0,0,0,0.40)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
+	background:linear-gradient(rgba(0,0,0,0.70)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
 }
 
 .menu, .locations{
@@ -393,6 +403,7 @@ footer{
 	color: #fff;
 	text-align: center;
 	padding: 20px;
+	border-top: 2px solid #fff;
 }
 
 /*********** animation ****************/
