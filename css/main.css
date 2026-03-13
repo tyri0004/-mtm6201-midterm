@@ -215,6 +215,16 @@ button:active{
 	box-shadow: none;
 }
 
+.about-us button{
+	background: #000;
+	color: #fff;
+}
+
+.about-us button:hover{
+	background: #966f2c;
+}
+
+
 /********************* Coffee images grid ******************/
 
 .coffee-images{
