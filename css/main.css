@@ -531,3 +531,81 @@ footer::before{
 		flex:1; 
 	}
 }
+
+/* desktop styles */
+
+@media screen and (min-width:1100px){
+
+	/* typography scale */
+
+	h1{
+		font-size: 3.815rem; 
+	}
+
+	h2{
+		font-size:3.052rem;
+	}
+
+	h3{
+		font-size:1.953rem;
+	}
+
+	/* banner spacing */
+
+	.banner{
+		padding: 220px 20px; 
+	}
+
+	/* main content spacing */
+
+	.wrapper{
+		padding: 100px 20px; 
+	}
+
+	/* coffee collage spacing */
+	.coffee-images{
+		gap: 20px; 
+	}
+
+	/* why visit us spacing */
+
+	.features{
+		gap:80px;
+	}
+
+	.menu, .locations{
+		padding: 200px 60px;
+	}
+
+	/* about section spacing */
+	
+	.about-us{
+		gap: 80px;
+	}
+
+	.about-us img{
+		width: 55%;
+	}
+
+	.story{
+		width: 45%;
+	}
+
+	/* testimonials layout */
+
+	.testimonial-cards{
+		gap: 40px; 
+	}
+
+	/* larger testimonial cards */
+
+	.cards{
+		min-height: 550px;
+	}
+
+	/* footer spacing */
+
+	footer{
+		padding: 60px 20px;
+	}
+}
