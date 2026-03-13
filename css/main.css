@@ -129,8 +129,7 @@ blockquote cite{
 
 .wrapper,
 .location-menu, 
-.about-us,
-.testimonials{
+.about-us{
 	max-width: 1200px;
 	margin: auto; 
 	padding: 60px 20px; 
@@ -351,10 +350,14 @@ button:active{
 	min-height: 500px;
 }
 /****************** testimonials ****************/
-
+.testimonials .wrapper{
+	max-width: 1200px; 
+	margin: auto;
+}
 .testimonials{
 	background: #000; 
 	color: #fff; 
+	padding: 60px 20px;
 }
 
 .testimonial-cards{
@@ -556,56 +559,63 @@ footer::before{
 		padding: 220px 20px; 
 	}
 
-	/* main content spacing */
-
-	.wrapper{
-		padding: 100px 20px; 
-	}
-
 	/* coffee collage spacing */
 	.coffee-images{
 		gap: 20px; 
 	}
 
-	/* why visit us spacing */
+	/* why visit us  */
 
 	.features{
-		gap:80px;
+		display:flex; 
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 40px;
 	}
+
+	.feature{
+		max-width: 300px;
+	}
+
+	.feature img{
+		width: 120px;
+	}
+
+	/* menu and locations */
 
 	.menu, .locations{
-		padding: 200px 60px;
+		padding: 100px 40px;
 	}
 
-	/* about section spacing */
+	/* about section  */
 	
 	.about-us{
-		gap: 80px;
+		gap: 60px;
 	}
 
 	.about-us img{
-		width: 55%;
+		width: 50%;
 	}
 
 	.story{
-		width: 45%;
+		width: 50%;
 	}
 
 	/* testimonials layout */
 
 	.testimonial-cards{
-		gap: 40px; 
+		gap: 25px; 
 	}
 
-	/* larger testimonial cards */
-
 	.cards{
-		min-height: 550px;
+		min-height: 420px; 
+		flex: 1; 
 	}
 
 	/* footer spacing */
 
 	footer{
-		padding: 60px 20px;
+		padding: 50px 20px;
 	}
 }
