@@ -604,18 +604,21 @@ footer::before{
 
 	/* testimonials layout */
 
-	.testimonial-cards{
-		gap: 25px; 
+	.testimonials{
+		padding: 100px;
 	}
 
 	.cards{
-		min-height: 420px; 
-		flex: 1; 
+		min-height: 320px; 
+	}
+
+	.testimonial-cards{
+		gap:20px;
 	}
 
 	/* footer spacing */
 
 	footer{
-		padding: 50px 20px;
+		padding: 30px 20px;
 	}
 }
