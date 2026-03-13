@@ -402,10 +402,20 @@ footer{
 	background: #000;
 	color: #fff;
 	text-align: center;
-	padding: 20px;
-	border-top: 2px solid #fff;
+	padding: 40px 20px;
+	position: relative;
 }
 
+footer::before{
+	content:"";
+	position: absolute; 
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+	width:85%;
+	height:1px;
+	background:rgba(255,255,255,0.4)
+}
 /*********** animation ****************/
 
 @keyframes fadeIn{
