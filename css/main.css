@@ -579,21 +579,24 @@ footer::before{
 		gap:40px; 
 	}
 
+	/* about image takes half the width  */
 	.about-us img{
 		width: 50%
 	}
 
+	/* story text takes the other half */
 	.story{
 		width: 50%;
 	}
 
-	/* testimonials */
+	/* testimonial card appear in a row */
 
 	.testimonial-cards{
 		flex-direction: row;
 		gap:20px;
 	}
 
+	/* cards share equal space */
 	.cards{
 		flex:1; 
 	}
@@ -603,7 +606,7 @@ footer::before{
 
 @media screen and (min-width:1100px){
 
-	/* typography scale */
+	/* typography scales up again for large screens */
 
 	h1{
 		font-size: 3.815rem; 
@@ -617,18 +620,18 @@ footer::before{
 		font-size:1.953rem;
 	}
 
-	/* banner spacing */
+	/* hero banner gets more vertical spacing */
 
 	.banner{
 		padding: 220px 20px; 
 	}
 
-	/* coffee collage spacing */
+	/* adds more coffee collage spacing */
 	.coffee-images{
 		gap: 20px; 
 	}
 
-	/* why visit us  */
+	/* features display in one row across the page */
 
 	.features{
 		display:flex; 
@@ -638,50 +641,51 @@ footer::before{
 		gap: 40px;
 	}
 
+	/* features slightly larger on desktop */
 	.feature{
 		max-width: 300px;
 	}
 
+	/* feature icons become slightly smaller */
 	.feature img{
 		width: 120px;
 	}
 
-	/* menu and locations */
-
+	/* menu and locations sections get balanced spacing */
 	.menu, .locations{
 		padding: 100px 40px;
 	}
 
-	/* about section  */
-	
+	/* more space between about section columns  */
 	.about-us{
 		gap: 60px;
 	}
 
+	/* keeps about image at half width */
 	.about-us img{
 		width: 50%;
 	}
-
+	/* keeps story text at half width */
 	.story{
 		width: 50%;
 	}
 
-	/* testimonials layout */
-
+	/* testimonials section gets larger spacing */
 	.testimonials{
 		padding: 100px;
 	}
 
+	/* testimonial cards slightly shorter for desktop layout */
 	.cards{
 		min-height: 320px; 
 	}
 
+	/* spacing between testimonial cards */
 	.testimonial-cards{
 		gap:20px;
 	}
 
-	/* footer spacing */
-
+	/* footer becomes slightly smaller*/
 	footer{
 		padding: 30px 20px;
 	}
