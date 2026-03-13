@@ -466,4 +466,44 @@ footer::before{
 		grid-row:1 / span 2; 
 		grid-column: 1;
 	}
+
+	/* why visit us */
+
+	.features{
+		flex-direction: row; 
+		justify-content: center;
+		gap:40px; 
+	}
+
+	/* menu and locations */
+
+	.location-menu{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* about us section */
+
+	.about-us{
+		flex-direction:row; 
+		align-items:center; 
+		gap:40px; 
+	}
+
+	.about-us img{
+		width: 50%
+	}
+
+	.story{
+		width: 50%;
+	}
+
+	/* testimonials */
+
+	.testimonial-cards{
+		flex-direction: row;
+	}
+
+	.cards{
+		flex:1; 
+	}
 }
