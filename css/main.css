@@ -51,16 +51,18 @@ table {
 **************************************/
 /************ Global Settings ************/
 
-/* ensures images scale properly */
+/* ensures images scale properly and never overflow their container */
 img{
 	max-width: 100%;
 	display: block;
 }
 
+/* sets box sizing so padding and borders are included in element width */
 html{
 	box-sizing:border-box;
 }
 
+/* main body styling for font, line spacig and page background colour */
 body{
 	font-family: 'Karla', sans-serif;
 	line-height: 1.6;
@@ -68,7 +70,9 @@ body{
 	background: #f3f0e9;
 }
 
-/* skip links  */
+/***************** skip links  **************/
+
+/* skip links allow keyboard users to jump to important sections quickly */
 
 .skip-links a{
 	position: absolute; 
@@ -81,52 +85,62 @@ body{
 	text-decoration: none; 
 }
 
+/* when the skip link is focused it becomes visible on the screen */
 .skip-links a:focus{
 	top: 10px; 
 }
 
 /***************** typography ***********/
 
+/* headings and navigation use the lato font */
 h1, h2, h3, h4, .main-nav a{
 	font-family: 'Lato', sans-serif;
 }
 
+/* main hero heading */
 h1{
 	font-size: 2.027rem;
 	font-weight:1000;
 	text-transform: uppercase;
 }
 
+/* section headings */
 h2{
 	font-size: 1.802rem;
 	text-transform: uppercase;
 }
 
+/* smaller heading used in cards and features */
 h3{
 	font-size: 1.424rem; 
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
+/* default paragraphy text size */
 p{
 	font-size: 1rem;
 }
 
+/* testimonial names are uppercase */
 blockquote cite{
 	text-transform: uppercase;
 }
 
+/* gold section labels about headings */
 #welcome-heading, #about-heading, #menu-heading, #locations-heading, #testimonials-heading, #offer-heading{
 	color: #d69e3d;
 	text-transform: uppercase;
 	font-weight: 800;
 }
 
+/* adds ecxtra spacing about the "what we offer" label */
 #offer-heading{
 	padding-top: 100px;
 }
 
 /*************** wrapper and container ***********/
 
+/* keeps main sections centered and limits the width to 1200px */
 .wrapper,
 .location-menu, 
 .about-us{
@@ -137,10 +151,12 @@ blockquote cite{
 
 /*************** main nav **************/
 
+/* header background colour */
 header{
 	background: #000;
 }
 
+/* navigation layout for mobile */
 .main-nav{
 	display:flex; 
 	flex-direction: column; 
@@ -148,17 +164,22 @@ header{
 	padding: 20px;
 }
 
+/* coffee shop logo size */
 .main-nav img{
 	width: 170px; 
 	margin-bottom: 10px; 
 }
 
+
+/* naviation links layout */
 .main-nav ul{
 	display: flex; 
 	gap: 20px; 
 	list-style: none; 
 }
 
+
+/* styling for nav links */
 .main-nav a{
 	color: #fff; 
 	text-decoration: none;
@@ -167,6 +188,7 @@ header{
 	transition: color .3s ease;
 }
 
+/* underline type of animation effect under the nav links for funzies */
 .main-nav a::after{
 	content: "";
 	position: absolute;
@@ -178,16 +200,20 @@ header{
 	transition: width .3s ease;
 }
 
+
+/* hover colour change */
 .main-nav a:hover{
 	color: #d69e3d;
 }
 
+/* the underline growwwwss on hover, again for funzies */
 .main-nav a:hover::after{
 	width: 100%;
 }
 
-/*************** Banner **********************/
+/*************** Banner/hero section **********************/
 
+/* hero background image with a dark overlay for readibility and to match mockup */
 .banner{
 	background:
 	linear-gradient(rgba(0,0,0,0.40)), url(../images/hero-background.jpg) center/cover no-repeat;
@@ -197,6 +223,7 @@ header{
 	animation:fadeIn 1.5s ease;
 }
 
+/* keeps hero paragraphy readable and centered */
 .banner p{
 	max-width: 500px;
 	margin: 20px auto;
@@ -204,11 +231,12 @@ header{
 
 /**************** buttons *****************/
 
+/* default button styling used across the site */
 button{
 	font-family: 'Karla', sans-serif;
 	background: #fff;
 	border: none; 
-	padding: 14px 30px;
+	padding: 18px 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -216,6 +244,7 @@ button{
 	transition: all .3s ease;
 }
 
+/* hover effect for buttons */
 button:hover{
 	background:#d69e3d; 
 	color:#fff;
@@ -223,27 +252,33 @@ button:hover{
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
+/* active click state */
 button:active{
 	background: #966f2c;
 	transform: translateY(1px);
 	
 }
 
+
+/* about section button styling black background white text */
 .about-us button{
 	background: #000;
 	color: #fff;
 }
 
+/* hover effect for about button */
 .about-us button:hover{
 	background: #d69e3d;
 }
 
+/* transparent button for locations section */
 .locations button{
 	background: transparent;
 	border: 2px solid #fff;
 	color: #fff;
 }
 
+/* hover state for location button */
 .locations button:hover{
 	background: #fff;
 	color: #000;
@@ -252,6 +287,8 @@ button:active{
 
 /********************* Coffee images grid ******************/
 
+
+/* grid layout for coffee collage images */
 .coffee-images{
 	display: grid; 
 	grid-template-columns: 1fr 1fr;
@@ -259,10 +296,13 @@ button:active{
 	margin-top:30px;
 }
 
+/* first image spans full width on mobile */
 .coffee-images img:first-child{
 	grid-column: 1 / -1;
 }
 
+
+/* eneures images fill theri grid space */
 .coffee-images img{
 	width:100%;
 	height: 100%;
@@ -270,15 +310,19 @@ button:active{
 	transition: transform .4s ease; 
 }
 
+/* small zoom animation on hover, for funzies */
 .coffee-images img:hover{
 	transform: scale(1.05); 
 }
 
 /***************** Why visit us ***************************/
+
+/* centers the feature section text */
 .offer{
 	text-align: center;
 }
 
+/* mobile layout stacks the features */
 .features{
 	display: flex;
 	flex-direction: column; 
@@ -286,12 +330,14 @@ button:active{
 	margin-top: 40px;
 }
 
+/* individual feature cards */
 .feature{
 	text-align: center; 
 	max-width: 280px; 
 	margin: auto;
 }
 
+/* feature icon styling */
 .feature img{
 	width: 150px; 
 	margin: 0 auto 20px auto; 
@@ -299,18 +345,21 @@ button:active{
 	transition: transform .4s ease;
 }
 
+/* icon grows slightly when hovered, for funzies */
 .feature:hover img{
 	transform:scale(1.15);
 }
 
 /************************ menu/locations ********************/
 
+/* shared background iamge with dark overlay */
 .location-menu{
 	display: grid; 
 	grid-template-columns: 1fr;
 	background:linear-gradient(rgba(0,0,0,0.70)),url(../images/coffee-shop.jpeg) center/cover no-repeat;
 }
 
+/* styling for both menu and location blocks */
 .menu, .locations{
 	color: #fff;
 	text-align: center;
@@ -318,22 +367,26 @@ button:active{
 
 }
 
+/* spacing below headings to match mockup */
+
 .location-menu h2{
 	padding-bottom: 50px;
 }
 
 /************ about  *****************/
 
+/* mobile layout stakcs image and text */
 .about-us{
 	display: flex;
 	flex-direction: column; 
 	gap: 30px;
 }
 
+/* spacing above the about button */
 .story button{
 	margin-top: 20px;
 }
-/* testimonial background imamges */
+/************** testimonial background imamges **********/
 
 #jane{
 	background:url(../images/testimonial-1.jpeg) center/cover no-repeat;
@@ -350,16 +403,21 @@ button:active{
 	min-height: 500px;
 }
 /****************** testimonials ****************/
+
+/* leeps testimonial content centered */
 .testimonials .wrapper{
 	max-width: 1200px; 
 	margin: auto;
 }
+
+/* full width black background for testimonial section */
 .testimonials{
 	background: #000; 
 	color: #fff; 
 	padding: 60px 20px;
 }
 
+/* testimonial card layout */
 .testimonial-cards{
 	display: flex; 
 	flex-direction:column;
@@ -368,16 +426,19 @@ button:active{
 
 }
 
+/* card animation, for funzies */
 .cards{
 	position: relative; 
 	overflow: hidden; 
 	transition: transform .3s ease;
 }
 
+/* card lifts slightly when hovered */
 .cards:hover{
 	transform: translateY(-8px);
 }
 
+/* testimonial text overlay */
 .cards blockquote{
 	position:absolute;
 	bottom: 0;
@@ -398,12 +459,14 @@ button:active{
 	transform: translateY(0);
 }
 
+/* gold coloured testimonial names */
 blockquote cite{
 	color:#d69e3d;
 }
 
 /***************** footer ***************/
 
+/* footer styles */
 footer{
 	background: #000;
 	color: #fff;
@@ -412,6 +475,7 @@ footer{
 	position: relative;
 }
 
+/* subtle white divider line above footer, verrry subtle */
 footer::before{
 	content:"";
 	position: absolute; 
@@ -424,6 +488,7 @@ footer::before{
 }
 /*********** animation ****************/
 
+/* fade in animation used in the  hero section  */
 @keyframes fadeIn{
 	from{
 		opacity: 0;
@@ -441,7 +506,7 @@ footer::before{
 
 
 @media screen and (min-width:768px){
-	/* typography scale */
+	/* typography gets larger for tablet screens */
 	h1{
 		font-size:2.986rem;
 	}
@@ -452,7 +517,7 @@ footer::before{
 		font-size:1.728rem;
 	}
 
-	/* main nav */
+	/* navigations switches from stacked to horizontal layout */
 
 	.main-nav{
 		flex-direction:row;
@@ -461,31 +526,30 @@ footer::before{
 		margin:auto;
 	}
 
+	/* removes extra space under logo */
 	.main-nav img{
 		margin-bottom: 0;
 	}
 
-	/* banner */
-
+	/* banner gets more vertical space */
 	.banner{
 		padding: 160px 20px; 
 	}
 
-	/* coffee images */
-
+	/* coffee images become a more complex grid layout */
 	.coffee-images{
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-rows: 250px 250px;
 		gap: 15px;
 	}
 
+	/* first image becomes a tall feature image */
 	.coffee-images img:first-child{
 		grid-row:1 / span 2; 
 		grid-column: 1;
 	}
 
-	/* why visit us */
-
+	/* features section changes to a 2 column grid */
 	.features{
 		display: grid; 
 		grid-template-columns: 1fr 1fr;
@@ -493,22 +557,22 @@ footer::before{
 		justify-items: center;
 	}
 
+	/* thrid feature spans full width underneath */
 	.feature:nth-child(3){
 		grid-column:1 / -1;
 	}
 
-	/* menu and locations */
-
+	/* menu and locations display side by side */
 	.location-menu{
 		grid-template-columns: 1fr 1fr;
 	}
 
+	/* increases spacing inside menu and location blocks */
 	.menu, .locations{
 		padding: 120px 40px;
 	}
 
-	/* about us section */
-
+	/* about us section becomes a two column layout */
 	.about-us{
 		flex-direction:row; 
 		align-items:center; 
